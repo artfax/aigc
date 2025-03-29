@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Create your own AI Girlfriend">
+		<meta name="keywords" content="Chat with your favourite girlfriend">
+		<meta name="robots" content="index, follow">
+		<title>
+			Create your AI Girlfriend with video and images in AI.GIRL.GS
+		</title>
+    <style>
+	    /* 视频背景样式 */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+	    </style>
+		<!-- favicon -->
+		
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<!-- normalize css -->
+		<link rel="stylesheet" href="static/css/normalize.css">
+		<!-- slick slider css -->
+		<link rel="stylesheet" href="static/css/slick-theme.css">
+		<link rel="stylesheet" href="static/css/slick.css">
+		<!-- cursor css -->
+		<link rel="stylesheet" href="static/css/cursor.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="static/css/animate.min.css">
+		<!-- Nice select css -->
+		<link rel="stylesheet" href="static/css/nice-select.css">
+		<!-- fontawesome css -->
+		<link rel="stylesheet" href="static/css/fontawesome.min.css">
+		<!-- normalize css -->
+		<link rel="stylesheet" href="static/css/normalize.css">
+		<!-- modal video css -->
+		<link rel="stylesheet" href="static/css/modal-video.min.css">
+		<!-- popup video css -->
+		<link rel="stylesheet" href="static/css/video-css.css">
+		<!-- meanmenu css -->
+		<link rel="stylesheet" href="static/css/meanmenu.min.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="static/css/style.css">
+
+		<!--[if lt IE 9]>
+			<script src="#"></script>
+			<script src="#"></script>
+		<![endif]-->
+	</head>
+
+	<body class="home-2">
+		<!-- preloader -->
+		<div id="preloader" class="inso-preloader">
+			<span class="loader">Loading Girls</span>
+		</div>
+		<!-- preloader end -->
+    <div class="video-background">
+        <!-- 请将这里的 video.mp4 替换为你实际的视频文件路径 -->
+        <video autoplay muted loop>
+            <source src="https://girl.gs/video/" type="video/mp4">
+            你的浏览器不支持视频播放。
+        </video>
+    </div>
+		<!-- offcanvase menu -->
+		<div class="o-hidden">
+			<div class="offcanvase">
+				<div class="offcanvase__menu">
+					<div class="offcanvase__menu--content">
+						<div class="offcanvase__menu--top mb-30 d-flex justify-content-between">
+							<div class="offcanvase__menu--logo">
+								<div class="offcanvase__logo">
+									<a href="">
+										<img src="static/picture/logo.svg" alt="logo loaded">
+									</a>
+								</div>
+							</div>
+							<div class="offcanvase__menu--close-icon">
+								<div class="close-menu pointer">
+									<i class="fa-sharp fa-regular fa-xmark"></i>
+								</div>
+							</div>
+						</div>
+						<div class="offcanvase-menu o-hidden mb-30"></div>
+						<div class="offcanvase__button mb-30">
+							<a class="login" href="https://girl.gs/kupid">Login</a>
+							<a class="signup" href="https://girl.gs/kupid">Sign Up</a>
+						</div>
+						<div class="offcanvase__menu--contact center">
+							<h4 class="offcanvase__menu--contact-title mb-20">Contact Us</h4>
+							<div class="offcanvase__menu--contact-text">
+								<ul>
+									<li><a href="https://girl.gs/kupid">+880196420859</a></li>
+									<li>
+										<a href="mailto:dnswizart@gmail.com">dnswizart@gmail.com</a>
+									</li>
+								</ul>
+								<p>Kypranoros 13 Nicosia 1061 Cyprus</p>
+							</div>
+						</div>
+						<div class="offcanvase__menu--social">
+							<ul class="d-flex justify-content-center gap-3">
+								<li class="social-item">
+									<a href="#" target="#"><i class="fa-brands fa-facebook"></i></a>
+								</li>
+								<li class="social-item">
+									<a href="#" target="#"><i class="fa-brands fa-twitter"></i></a>
+								</li>
+								<li class="social-item">
+									<a href="#" target="#"><i class="fa-brands fa-line"></i></a>
+								</li>
+								<li class="social-item">
+									<a href="#" target="#"><i class="fa-brands fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="thanks-giving mt-5">
+							<img src="static/picture/thanks.jpg" alt="thank you">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas__overlay"></div>
+		<!-- offcanvase menu end -->
+
+		<!-- header menu -->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="header__wrapper">
+						<div class="header__logo">
+							<a href=""><img src="static/picture/logo.svg" alt="InsoAi Logo"></a>
+						</div>
+						<div class="header__menu">
+							<nav id="offcanvase__menu">
+								<ul>
+									<li class="has-children">
+										<a href="https://girl.gs/kupid">Home</a>
+										
+									</li>
+									<li class="has-children">
+										<a href="https://girl.gs/kupid">VirtualGF</a>
+										
+									</li>
+									<li class="has-children">
+										<a href="https://girl.gs/realdoll">AI Sex Doll</a>
+										
+									</li>
+									
+									</li>
+									<li><a href="https://girl.gs/kupid">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__right">
+							<div class="header__right--btn">
+								<a class="login" href="https://girl.gs/kupid">Login</a>
+								<a class="signup" href="https://girl.gs/kupid">Get Started <i class="fa-thin fa-arrow-right"></i></a>
+							</div>
+							<button class="menu-icon d-md-block d-lg-none">
+								<i class="fa-sharp fa-solid fa-bars"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header menu end -->
+
+		<!-- hero area -->
+		<section class="hero-two pt-50">
+			<div class="container position-relative">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="hero-two__content text-center">
+							<h2 class="">
+								Craft the AI<strong class="clip-text-2"> Girlfriend</strong>
+
+								<img src="static/picture/hero-2.jpg" alt=""> <br>
+								of Your Dreams
+								
+							</h2>
+							<p class="">
+								Enter a new era of digital relationships. Create your highly customizable AI character with hundreds of unique traits, and experience AI girlfriend chat on a whole new level.
+							</p>
+						
+							<div class="tags mt-30">
+								<span>Popular tags:</span>
+								<a href="https://girl.gs/kupid">Mature</a>
+								<a href="https://girl.gs/kupid">Bigboobs</a>
+								<a href="https://girl.gs/kupid">Realistic</a>
+								<a href="https://girl.gs/kupid">Anime</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- hero area end -->
+
+		<!-- infinite scrolling -->
+		<div class="scrolling pt-100 pb-50">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="image-scrolling">
+						<div class="items">
+							<div class="s-img">
+								<img src="static/picture/1.jpg" alt="">
+							</div>
+							<div class="s-img">
+								<img src="static/picture/2.jpg" alt="">
+							</div>
+							<div class="s-img">
+								<img src="static/picture/3.jpg" alt="">
+							</div>
+							<div class="s-img">
+								<img src="static/picture/4.jpg" alt="">
+							</div>
+							<div class="s-img">
+								<img src="static/picture/5.jpg" alt="">
+							</div>
+							<div class="s-img">
+								<img src="static/picture/6.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="text-scrolling">
+						<div class="text-scrolling-animation">
+							<div class="items">
+								<span><strong class="stroke">Creat</strong> <b>AI</b> Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+							</div>
+							<div class="items">
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+							</div>
+							<div class="items">
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+								<span><strong class="stroke">Create</strong> <b>AI</b>Girlfriend
+									<img src="static/picture/vector-white.png" alt=""></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- infinite scrolling end -->
+
+
+
+		<!-- image generation -->
+		<section class="process pt-10 pb-110">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="process__image">
+							<div class="video-player">
+								<div class="d-flex justify-content-center align-items-center video-container" style="background-image: url(static/image/video.jpg)" data-url="" data-title="Video Embedded">
+									<div class="image-overlay play-btn"></div>
+									<div><a href="https://girl.gs/realdoll" target='_blank'" >
+										<button  class="player-btn play-btn" data-magnetic="" >
+											<i class="fa-solid fa-play" style="margin-left: 5px"></i>
+										</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="process__content">
+							<h4> Best AI Girlfriend For Virtual Partner.</h4>
+							<p>
+								Create your Dream AI GF effortlessly! Customize appearance, personality, and chat preferences to design your ideal companion. With simple tools and endless options, bring your perfect virtual partner to life and enjoy meaningful interactions tailored just for you.
+							</p>
+
+							<div class="funFact d-flex flex-wrap gap-4 mt-30 mb-30">
+								<div class="s-item">
+									<h4>169k+</h4>
+									<p>Girls Generation</p>
+								</div>
+								<div class="s-item">
+									<h4>4.5/5</h4>
+									<p>Satisfaction Rating</p>
+								</div>
+								<div class="s-item">
+									<h4>25m+</h4>
+									<p>Hours 2000+</p>
+								</div>
+							</div>
+							<div class="group-element d-flex flex-wrap gap-3">
+								<a href="https://girl.gs/kupid" class="btn-main">Creat AI Girl <i class="fa-light fa-arrow-right-long"></i></a>
+								<div class="app-user d-flex flex-wrap gap-5 align-items-center">
+									<div class="user-list">
+										<ul>
+											<li><img src="static/picture/11.jpg" alt=""></li>
+											<li><img src="static/picture/21.jpg" alt=""></li>
+											<li><img src="static/picture/31.jpg" alt=""></li>
+										</ul>
+									</div>
+									<span>200+ Sexy Models</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- image generation end -->
+
+		<!-- generate image -->
+		<section class="ai-gen">
+			<div class="container">
+				<div class="row">
+					<div class="section_two mb-50">
+						<h4 class="section_two__title">
+							Your AI GF Will Also Send <strong class="clip-text-2">Pics</strong> !
+						</h4>
+						<h6 class="section_two__subtitle">
+							Our AI girls can seamlessly deliver consistent photos, enhancing your experience with personalized visuals. Whether it’s a snapshot of their day or a requested image, enjoy a continuous flow of engaging visuals right in your conversation.
+						</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="ai-gen__images">
+							<div class="main-image">
+								<img id="big-image" src="static/picture/big.jpg" alt="">
+							</div>
+							<div class="thumb-image mb-50">
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/9.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/22.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/32.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/41.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/51.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/61.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/7.jpg" alt="">
+								</div>
+								<div class="s-item">
+									<img onclick="changeImage(this);" src="static/picture/8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="ai-gen__single">
+							<div class="ai-gen__single--box d-flex gap-3 align-items-center">
+								<div class="icon">01</div>
+								<div class="content">
+									<h5>Immersive Chat</h5>
+									<p>
+Our AI chat is crafted to engage in dynamic and lifelike interactions.
+
+</p>
+								</div>
+							</div>
+						</div>
+						<div class="ai-gen__single">
+							<div class="ai-gen__single--box d-flex gap-3 align-items-center">
+								<div class="icon">02</div>
+								<div class="content">
+									<h5>Personalized Experience
+</h5>
+									<p>
+Allowing you to model the Roleplay of your chat, to customize and dive into different scenarios.									</p>
+								</div>
+							</div>
+						</div>
+						<div class="ai-gen__single">
+							<div class="ai-gen__single--box d-flex gap-3 align-items-center">
+								<div class="icon">03</div>
+								<div class="content">
+									<h5>Emotional Support</h5>
+									<p>
+Chat, Roleplay, and engage in meaningful ways.
+								</div>
+							</div>
+						</div>
+						<div class="ai-gen__single">
+							<div class="ai-gen__single--box d-flex gap-3 align-items-center">
+								<div class="icon">04</div>
+								<div class="content">
+									<h5>Is the AI GF like a real person?</h5>
+									<p>
+										While the AI girlfriend is designed to simulate human interaction, she is not a real person. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- generate image end -->
+
+		<!-- info -->
+		<section class="info pt-110 pb-110">
+			<div class="container position-relative">
+				<div class="row align-items-center justify-content-md-center">
+					<div class="col-lg-6 col-md-10 order-md-2 order-lg-0">
+						<div class="info__content">
+							<h4>Create your perfect  <strong class="clip-text-2">AI girlfriend</strong>  
+								 
+								<strong class="clip-text-2">Customize Chat and Connect</strong>
+							</h4>
+							<p>
+								Choose between a realistic style or an anime-inspired look for your AI girlfriend. The realistic style offers lifelike detail and authentic features, while the anime style brings a more animated, imaginative, and expressive design. 
+							</p>
+							<a href="https://girl.gs/kupid" class="btn-main">Generator A Girl</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-10 text-center">
+						<div class="info__section">
+							<div class="info-bg"></div>
+							<div class="info__images">
+								<div class="first-img">
+									<img src="static/picture/gen-1.jpg" alt="">
+								</div>
+								<div class="second-img">
+									<img src="static/picture/gen-2.jpg" alt="">
+								</div>
+								<div class="third-img">
+									<img src="static/picture/gen-3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- info end -->
+
+		<!-- stylish image -->
+		<section class="stylish style-two">
+			<div class="container">
+				<div class="row">
+					<div class="section_two mb-50">
+						<h4 class="section_two__title">Chat with your Dream AI</h4>
+						<h6 class="section_two__subtitle">
+							Create your first Dream Companion to get started with personalized conversations
+						</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="stylish__slider">
+				
+
+						<div class="slider__tab-content tab__content animate__fadeIn open" id="creative">
+							<div class="stylish__slide dot">
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-1.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-2.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-3.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-4.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-5.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+
+								<div class="stylish__slider--single" style="background-image: url(static/image/gen-6.jpg)">
+									<div class="content">
+										<h5>AI Girlfriend</h5>
+										<a href="https://girl.gs/kupid">Create</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- stylish image end -->
+
+
+
+	
+
+		<!-- blog -->
+		<section class="blog pt-110 pb-80">
+			<div class="container">
+				<div class="row">
+					<div class="section_two mb-50">
+						<h4 class="section_two__title">RealDoll</h4>
+						<h6 class="section_two__subtitle">
+							The Transformer architecture uses an attention mechanism that
+							allows the model to weigh the importance of different words.
+						</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="blog__single">
+							<div class="blog__thumb">
+								<a href="https://girl.gs/RealDoll">
+									<img src="static/picture/blog-2.jpg" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="blog__meta">
+								<div class="d-flex gap-3 mb-15 mt-10">
+									<span class="date">Realistic Attractive Sex Doll Bambi</span>
+									<span class="comments">163cm/5ft4 H-cup TPE Sex Doll</span>
+								</div>
+								<h4 class="title">
+									<a href="https://girl.gs/RealDoll">Detailed prompts and generate almost anything on the
+										fly.</a>
+								</h4>
+								<p>
+									Governments and international bodies should establish
+									regulations and standards for AI,
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="blog__single">
+							<div class="blog__thumb">
+								<a href="https://girl.gs/RealDoll">
+									<img src="static/picture/blog-3.jpg" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="blog__meta">
+								<div class="d-flex gap-3 mb-15 mt-10">
+									<span class="date">Realistic Attractive Sex Doll Bambi</span>
+									<span class="comments">163cm/5ft4 H-cup TPE Sex Doll</span>
+								</div>
+								<h4 class="title">
+									<a href="https://girl.gs/RealDoll">Detailed prompts and generate almost anything on the
+										fly.</a>
+								</h4>
+								<p>
+									Governments and international bodies should establish
+									regulations and standards for AI,
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="blog__single">
+							<div class="blog__thumb">
+								<a href="https://girl.gs/RealDoll">
+									<img src="static/picture/blog-4.jpg" alt="" loading="lazy">
+								</a>
+							</div>
+							<div class="blog__meta">
+								<div class="d-flex gap-3 mb-15 mt-10">
+									<span class="date">Realistic Attractive Sex Doll Bambi</span>
+									<span class="comments">163cm/5ft4 H-cup TPE Sex Doll</span>
+								</div>
+								<h4 class="title">
+									<a href="https://girl.gs/RealDoll">Detailed prompts and generate almost anything on the
+										fly.</a>
+								</h4>
+								<p>
+									Governments and international bodies should establish
+									regulations and standards for AI,
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- blog end -->
+
+		<!-- footer -->
+		<footer class="footer pt-110 pb-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="footer__widget">
+							<div class="footer__widget--item d-flex flex-column gap-4">
+								<a href="">
+									<img src="static/picture/logo.svg" alt="footer logo">
+								</a>
+								<p>
+									Over the years, our dedication to excellence has earned us
+								</p>
+								<div class="social__links">
+									<a href="https://girl.gs/kupid"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="https://girl.gs/kupid"><i class="fa-brands fa-twitter"></i></a>
+									<a href="https://girl.gs/kupid"><i class="fa-brands fa-instagram"></i></a>
+									<a href="https://girl.gs/kupid"><i class="fa-brands fa-linkedin"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="footer__widget">
+							<h5>Company</h5>
+							<div class="footer__widget--item d-flex flex-column gap-4">
+								<ul>
+									<li><a href="https://girl.gs/kupid">About Us</a></li>
+									<li><a href="https://girl.gs/kupid">community</a></li>
+									<li><a href="https://girl.gs/kupid">Careers</a></li>
+									<li><a href="https://girl.gs/kupid">Program</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="footer__widget">
+							<h5>Resources</h5>
+							<div class="footer__widget--item d-flex flex-column gap-4">
+								<ul>
+									<li><a href="https://girl.gs/kupid">AI Writing</a></li>
+									<li><a href="https://girl.gs/kupid">AI Image Generator</a></li>
+									<li><a href="https://girl.gs/kupid">AI Video Generator</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="footer__widget">
+							<h5>Use Cases</h5>
+							<div class="footer__widget--item d-flex flex-column gap-4">
+								<ul>
+									<li><a href="https://girl.gs/kupid">For Teams</a></li>
+									<li><a href="https://girl.gs/kupid">For Email Merketers</a></li>
+									<li><a href="https://girl.gs/kupid">Content Rewriter</a></li>
+									<li><a href="https://girl.gs/kupid">Social Managers</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="footer__widget">
+							<h5>Contact</h5>
+							<div class="footer__widget--item d-flex flex-column gap-4">
+								<ul>
+									<li><a href="tel:+8801755202096">+8801755202096</a></li>
+									<li>
+										<a href="mailto:dnswizart@gmail.com">dnswizart@gmail.com</a>
+									</li>
+									<li>1241 Hart Country Lane</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+		<!-- footer credit -->
+		<div class="footer-credit">
+			<div class="container">
+				<div class="copy-right text-center">
+					Copyright &copy; 2025. &copy; AI.GIRL.GS &copy; AIGC.CX </a>
+				</div>
+			</div>
+		</div>
+		<!-- footer credit end -->
+
+		<!-- back to top -->
+		<div class="scroll active-scroll">
+			<svg class="scroll__circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="
+						transition: stroke-dashoffset 10ms linear 0s;
+						stroke-dasharray: 307.919px, 307.919px;
+						stroke-dashoffset: 244.073px;
+					"></path>
+			</svg>
+		</div>
+		<!-- back to top end -->
+
+		<!-- all jquery plugins here -->
+		<!-- jquery -->
+		<script src="static/js/Jquery-3.7.0.js"></script>
+		<!-- bootstrap- jquery included -->
+		<script src="static/js/bootstrap.min.js"></script>
+		<!-- slick slider- jquery included -->
+		<script src="static/js/slick.min.js"></script>
+		<!-- niceselect - jquery included -->
+		<script src="static/js/jquery.nice-select.min.js"></script>
+		<!-- imageloaded pkgd - jquery included -->
+		<script src="static/js/imagesloaded.pkgd.min.js"></script>
+		<!-- appear - jquery included -->
+		<script src="static/js/appear.min.js"></script>
+ 
+ 		<!-- meamenu - jquery inclued -->
+		<script src="static/js/jquery.meanmenu.min.js"></script>
+ 
+ 		<!-- cursor js - jquery included -->
+		<script src="static/js/cursor.js"></script>
+		<!-- main js -->
+		<script src="static/js/main.js"></script>
+
+		<script>
+			function changeImage(thumbnail) {
+				var newImageSrc = thumbnail.src;
+				var mainImage = document.getElementById('big-image');
+				mainImage.src = newImageSrc;
+			}
+		</script>
+	</body>
+</html>
