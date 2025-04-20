@@ -1,3 +1,5 @@
+去掉背景视频
+简洁背景
 # aigc
 AI girl friend
 
